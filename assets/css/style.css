@@ -127,7 +127,14 @@ body{
 .choice-container:hover{
     cursor: pointer;
     background-color: #84c1f9;
+    transform: scale(1.02);
+    transform: 100ms;
 }
+
+.choice-prefix {
+    padding: 0.1rem 2rem;
+}
+
 
 .correct{
     background: #99e599;
