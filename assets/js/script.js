@@ -13,36 +13,36 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: 'what is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
-        answer: 1,
-    },
-    {
-        question: 'what is 1 + 1?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'What does HTML stand for?',
+        choice1: 'Hyper Text Preprocessor ',
+        choice2: 'Hyper Text Markup Language',
+        choice3: 'Hyper Text Multiple Language',
+        choice4: 'Hyper Tool Multi Language',
         answer: 2,
     },
     {
-        question: 'what is 3 + 3?',
-        choice1: '2',
-        choice2: '6',
-        choice3: '21',
-        choice4: '17',
-        answer: 2,
+        question: 'What does CSS stand for?',
+        choice1: 'Common Syle Sheet',
+        choice2: 'Colorful Style Sheet',
+        choice3: 'Compluter Style Sheet',
+        choice4: 'Cascading Style Sheet',
+        answer: 4,
     },
     {
-        question: 'what is 4 + 4?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '8',
-        choice4: '17',
+        question: 'What does PHP stand for?',
+        choice1: 'Hometext Preprocessor',
+        choice2: 'Hypertext Preprogramming',
+        choice3: 'Hypertext Programming',
+        choice4: 'Hypertext Preprocessor',
         answer: 3,
+    },
+    {
+        question: 'What does SQL stand for?',
+        choice1: 'Stylish Question Language',
+        choice2: 'Styesheet Query Language',
+        choice3: 'Statement Question Language',
+        choice4: 'Structured Query Language',
+        answer: 4,
     },
 ]
 
@@ -61,4 +61,52 @@ getNewQuestion = () => {
         localStorage.setItem('mostRecentScore', score)
 
         return window.location.assign('/end.html')
-    }}
+    }
+    questionCounter++
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+
+
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
+    currentQuestion = availableQuestions[questionsIndex]
+    question.innerText = currentQuestion.question
+    
+    choices.forEach(choice => {
+        const number = choice.dataset['number']
+        choice.innerText = currentQuestion['choice' + number]
+    })
+
+    availableQuestions.splice(questionsIndex, 1)
+    
+    acceptingAnswers = true
+}
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' :
+        'incorrect'
+
+        if(classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+        }, 1000)
+    })
+})
+
+incrementScore = num => {
+    score +=num
+    scoreText.innerText= score
+}
+
+startGame()
