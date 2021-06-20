@@ -14,12 +14,13 @@ let availableQuestions = [];
 let questions = [
     {
         question: 'What does HTML stand for?',
-        choice1: 'Hyper Text Preprocessor ',
-        choice2: 'Hyper Text Markup Language',
-        choice3: 'Hyper Text Multiple Language',
-        choice4: 'Hyper Tool Multi Language',
-        answer: 2,
+        choice1: 'Hyper Text Preprocessor ', correct: false,
+        choice2: 'Hyper Text Markup Language', correct: true,
+        choice3: 'Hyper Text Multiple Language', correct: false,
+        choice4: 'Hyper Tool Multi Language', correct: false
+        
     },
+    
     {
         question: 'What does CSS stand for?',
         choice1: 'Common Syle Sheet',
@@ -46,7 +47,7 @@ let questions = [
     },
 ]
 
-const SCORE_POINTS = 100;
+const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 4;
 
 startGame = () => {
@@ -62,9 +63,9 @@ getNewQuestion = () => {
 
         return window.location.assign('/end.html')
     }
+
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
-
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
@@ -110,3 +111,5 @@ incrementScore = num => {
 }
 
 startGame()
+
+

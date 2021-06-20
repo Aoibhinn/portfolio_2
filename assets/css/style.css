@@ -113,9 +113,10 @@ body{
 }
 
 .choice-container{
-    display: flex;
+    display: block;
+    margin-left: 2rem;
     margin-bottom: 0.8rem;
-    width: 60%;
+    width: 80%;
     border-radius: 6px;
     background: #d6eafd;
     font-size: 1rem;
@@ -124,6 +125,30 @@ body{
     border: 1px solid #98cbfa;
 }
 
+#progressText{
+    float: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.score-item{
+    float: right;
+    margin-right: 2rem;
+    background-color: #98cbfa;
+    height: 30rem;
+    width: 5rem;
+   
+
+}
+
+#question{
+    text-align: left;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+
 .choice-container:hover{
     cursor: pointer;
     background-color: #84c1f9;
@@ -131,17 +156,20 @@ body{
     transform: 100ms;
 }
 
-.choice-prefix {
-    padding: 0.1rem 2rem;
+.choice-text{
+    text-align: left;
+    margin-left: 1rem;
 }
 
 
 .correct{
-    background: #99e599;
+    background: linear-gradient(#99e599, #99e599)
+    
 }
 
 .incorrect{
-    background: #ff9999;
+    background: linear-gradient(#ff9999, #ff9999)
+  
 }
 
 /* Heads Up Display */
