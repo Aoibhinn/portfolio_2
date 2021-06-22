@@ -172,7 +172,30 @@ body{
   
 }
 
-/* Heads Up Display */
+/* End game page */
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 15rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border: none;
+}
+
+input::placeholder{
+    color: lightgray;
+}
+
+
+
 
 
 
