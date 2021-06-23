@@ -14,10 +14,11 @@ let availableQuestions = [];
 let questions = [
     {
         question: 'What does HTML stand for?',
-        choice1: 'Hyper Text Preprocessor ', correct: false,
-        choice2: 'Hyper Text Markup Language', correct: true,
-        choice3: 'Hyper Text Multiple Language', correct: false,
-        choice4: 'Hyper Tool Multi Language', correct: false
+        choice1: 'Hyper Text Preprocessor ', 
+        choice2: 'Hyper Text Markup Language', 
+        choice3: 'Hyper Text Multiple Language',
+        choice4: 'Hyper Tool Multi Language', 
+        answer: 2,
         
     },
     
@@ -61,7 +62,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/end.html')
+        return window.location.assign('end.html')
     }
 
     questionCounter++
