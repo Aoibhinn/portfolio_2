@@ -1,7 +1,7 @@
-const question = document.querySelector('#question');
-const choices = Array.from(document.querySelectorAll('.choice-text'));
-const progressText = document.querySelector('#progressText');
-const scoreText = document.querySelector('#score');
+const QUESTION = document.querySelector('#question');
+const CHOICES = Array.from(document.querySelectorAll('.choice-text'));
+const PROGRESS_TEXT = document.querySelector('#progressText');
+const SCORE_TEXT = document.querySelector('#score');
 
 
 let currentQuestion = {};
@@ -71,7 +71,7 @@ getNewQuestion = () => {
 
 //Increment the counter and display the question the user is currently on out of the max questions they need to answer
     questionCounter++;
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+    PROGRESS_TEXT.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
 
 /*Keep track of what question the player is currently on. Once player has selected their choice
 remove current question and choices and display new question and choices that the user has yet to answer
@@ -80,7 +80,7 @@ remove current question and choices and display new question and choices that th
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
     
-    choices.forEach(choice => {
+    CHOICES.forEach(choice => {
         const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
     });
@@ -91,7 +91,7 @@ remove current question and choices and display new question and choices that th
 };
 
 //For selected answers display correct and incorrect css depending on answer
-choices.forEach(choice => {
+CHOICES.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return;
 
@@ -121,7 +121,7 @@ choices.forEach(choice => {
 
 incrementScore = num => {
     score +=num;
-    scoreText.innerText= score;
+    SCORE_TEXT.innerText= score;
 };
 
 startGame();
