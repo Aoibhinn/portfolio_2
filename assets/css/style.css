@@ -43,7 +43,6 @@ body{
 
 .btn:hover{
     cursor: pointer;
-    transition: transform 150rem;
     transform: scale(1.03);
 }
 
@@ -148,7 +147,6 @@ body{
     cursor: pointer;
     background-color: #84c1f9;
     transform: scale(1.02);
-    transform: 100ms;
 }
 
 .choice-text{

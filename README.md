@@ -1,59 +1,58 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Test you coding knowledge
 
-Welcome Aoibhinn,
+This is a five-question quiz testing the player on common coding acronyms. For each question, the player will have the opportunity to choose one out of four possible answers. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+If the player chooses the wrong answer this will be communicated to the player by highlighting the question in red. If the player chooses the right answer, the question will be highlighted green. For each right answer, the player will receive 10 points. 
 
-## Gitpod Reminders
+After the player has completed the five questions, their score will be presented to them and they are invited to create create a username to save their score to the leader board. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+From the home page, the player will be able to view the leaderboard with their score. 
+![Coding_Quiz](/images/quiz.png)
 
-`python3 -m http.server`
+## Features
 
-A blue button should appear to click: _Make Public_,
+__Question Counter__
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+To help the player keep track of their progress, they are able to see what question they are on out of how many questions there are to complete from the counter displayed at the top of the game.
 
-A blue button should appear to click: _Make Public_,
+![Question Counter](/images/question_counter.png)
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+__Score__
 
-To log into the Heroku toolbelt CLI:
+For each correct answer the player will receive 10 points. Their score is displayed at the top of the game and will be increment each time they answer the question correctly. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![Score](/images/score.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+__Correct and Incorrect Answers__
 
-## Updates Since The Instructional Video
+The game will communicate to the player when they have answered correctly and incorrectly. If the player answers the wrong answer the answer they have chosen will be highlighted red. If the player answers the right answer the answer will be highlighted in green. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Correct and Incorrect Answers](/images/answers.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+__End Game__
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+After the player has completed the game they are presented with their score. The player is invited to enter their name to save their score to the leaderboard. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![End_Game](/images/end.png)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+__Leaderboard__
+The player can access the leaderboard from the home page where their score and name is displayed. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Leaderboard](/images/leaderboard.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Features left to implement 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+A timer to only give the player a certain amount of time to answer a question before they need to move onto the next 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
----
 
-Happy coding!
+
+
+
+
+
+
+

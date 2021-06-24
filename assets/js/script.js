@@ -1,19 +1,7 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
-
 const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
-
 
 
 let currentQuestion = {};
@@ -62,6 +50,8 @@ let questions = [
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 4;
 
+
+
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -69,6 +59,8 @@ startGame = () => {
     getNewQuestion();
 };
 
+
+//If the player has answered all questions, add their score to local storgae and go to the end page
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -76,9 +68,13 @@ getNewQuestion = () => {
         return window.location.assign('end.html');
     }
 
+//Increment the counter and display the question the user is currently on out of the max questions they need to answer
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
 
+/*Keep track of what question the player is currently on. Once player has selected their choice
+remove current question and choices and display new question and choices that the user has yet to answer
+*/
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
@@ -92,6 +88,7 @@ getNewQuestion = () => {
     
     acceptingAnswers = true;
 };
+
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
