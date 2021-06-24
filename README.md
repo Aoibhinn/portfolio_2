@@ -49,12 +49,24 @@ A timer to only give the player a certain amount of time to answer a question be
 ### Validator Testing 
 
 - HTML
-  - One error was returned when passing through the official W3C validator. There was a stray end tag on the index.html file. This has since been removed. ![W3C validator](/workspace/portfolio_2/assets/images/Error_found_through_W3C_validator.png)
-  - No errors were returned for the highscores.html file when passing through the official ![W3C validator](/workspace/portfolio_2/assets/images/highscore_page_validated.png)
-  - No errors were returned for the game.html file when passing through the official ![W3C validator](/workspace/portfolio_2/assets/images/game_page_validated.png) 
-  - No errors were returned for the end.html file when passing through the official ![W3C validator](/workspace/portfolio_2/assets/images/end_page_validated.png) 
+  - One error was returned when passing through the official W3C validator. There was a stray end tag on the index.html file. This has since been removed. ![Error found through W3C on index.html](/workspace/portfolio_2/assets/images/Error_found_through_W3C_validator.png)
+  - No errors were returned for the highscores.html file when passing through the official ![W3C validator highscores.html](/workspace/portfolio_2/assets/images/highscore_page_validated.png)
+  - No errors were returned for the game.html file when passing through the official ![W3C validator game.html](/workspace/portfolio_2/assets/images/game_page_validated.png) 
+  - No errors were returned for the end.html file when passing through the official ![W3C validator end.html](/workspace/portfolio_2/assets/images/end_page_validated.png) 
 
 
 
 - CSS
-  - Two errors found when passing through the official [(Jigsaw) validator](/workspace/portfolio_2/assets/images/two_errors_W3C.png). These were resolved [(Jigsaw) validator](/workspace/portfolio_2/assets/images/CSS_Validated.png
+  - Two errors found when passing through the official [Two errors found on (Jigsaw) validator](/workspace/portfolio_2/assets/images/two_errors_W3C.png). These were resolved [(Jigsaw) validator](/workspace/portfolio_2/assets/images/CSS_Validated.png
+
+  ## Deployment
+  - The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://aoibhinn.github.io/portfolio_2/
+
+### Content
+
+- The funcationlaity for the game was inspired by Brian Designs video on creating a short quiz https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2749s 
