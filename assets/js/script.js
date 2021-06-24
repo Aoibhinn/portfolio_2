@@ -10,6 +10,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+
 let questions = [
     {
         question: 'What does HTML stand for?',
@@ -50,7 +51,7 @@ let questions = [
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 4;
 
-
+//start game score and question counter is 0, display question to player
 
 startGame = () => {
     questionCounter = 0;
@@ -89,7 +90,7 @@ remove current question and choices and display new question and choices that th
     acceptingAnswers = true;
 };
 
-
+//For selected answers display correct and incorrect css depending on answer
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return;
@@ -101,18 +102,22 @@ choices.forEach(choice => {
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' :
         'incorrect';
 
+        //if answer is correct add to score 
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS);
         }
 
         selectedChoice.parentElement.classList.add(classToApply);
 
+        //when choice is selected move onto next question 
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
         }, 1000);
     });
 });
+
+//Display added score to player 
 
 incrementScore = num => {
     score +=num;

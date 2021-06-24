@@ -1,4 +1,4 @@
-# Test you coding knowledge
+# Test your coding knowledge
 
 This is a five-question quiz testing the player on common coding acronyms. For each question, the player will have the opportunity to choose one out of four possible answers. 
 
@@ -14,20 +14,20 @@ From the home page, the player will be able to view the leaderboard with their s
 __Question Counter__
 
 
-To help the player keep track of their progress, they are able to see what question they are on out of how many questions there are to complete from the counter displayed at the top of the game.
+To help the player keep track of their progress, they can see what question they are on out of how many questions there are to complete from the counter displayed at the top of the game.
 
 ![Question Counter](/workspace/portfolio_2/assets/images/question_counter.png)
 
 
 __Score__
 
-For each correct answer the player will receive 10 points. Their score is displayed at the top of the game and will be increment each time they answer the question correctly. 
+For each correct answer, the player will receive 10 points. Their score is displayed at the top of the game and will be increment each time they answer the question correctly. 
 
 ![Score](/workspace/portfolio_2/assets/images/score.png)
 
 __Correct and Incorrect Answers__
 
-The game will communicate to the player when they have answered correctly and incorrectly. If the player answers the wrong answer the answer they have chosen will be highlighted red. If the player answers the right answer the answer will be highlighted in green. 
+The game will communicate to the player when they have answered correctly and incorrectly. If the player answers the wrong answer the answer they have chosen will be highlighted in red. If the player answers the right answer the answer will be highlighted in green. 
 
 ![Correct and Incorrect Answers](/workspace/portfolio_2/assets/images/answers.png)
 
@@ -65,8 +65,9 @@ A timer to only give the player a certain amount of time to answer a question be
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://aoibhinn.github.io/portfolio_2/
+  The live link can be found here - https://aoibhinn.github.io/portfolio_2/
 
 ### Content
 
-- The funcationlaity for the game was inspired by Brian Designs video on creating a short quiz https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2749s 
+- The funcationlaity for the game was inspired by Brian Designs video on creating a short quiz https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2749s
+- The icon on the home page were taken from [Font Awesome](https://fontawesome.com/) 
