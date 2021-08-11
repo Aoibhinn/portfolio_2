@@ -16,6 +16,7 @@
 <body>
     <div class="container">
         <div id="game">
+
             <div id="hud">
                 <div class="hud-item">
                     <p id="progressText" class="hud-prefix">
@@ -33,7 +34,8 @@
                 </div>
             </div>
 
-            <div id="question"> What is the answer to this question</div>
+            <!--Question and choices section-->
+            <div id="question"></div>
             <div class="choice-container">
                 <p class="choice-text" data-number="1"></p>
             </div>
@@ -46,8 +48,19 @@
             <div class="choice-container">
                 <p class="choice-text" data-number="4"></p>
             </div>
+
+            <div class="bottom-display">
+                <div>
+                    <p id="timeleft" class="timer"></p>
+                </div>
+                <div>
+                    <!--Takes user back to home page-->
+                    <a class="home-btn" href="index.html"><i class="fas fa-home"></i></a>
+                   </div>
+            </div>
         </div>    
     </div>
-
+     <!--Link to javaScript file-->
     <script src="assets/js/script.js"></script>
+</body>
 </html>

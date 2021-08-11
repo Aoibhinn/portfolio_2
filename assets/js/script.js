@@ -2,6 +2,7 @@ const QUESTION = document.querySelector('#question');
 const CHOICES = Array.from(document.querySelectorAll('.choice-text'));
 const PROGRESS_TEXT = document.querySelector('#progressText');
 const SCORE_TEXT = document.querySelector('#score');
+const timeleft = document.getElementById("timeleft");
 
 
 let currentQuestion = {};
@@ -51,8 +52,7 @@ let questions = [
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 4;
 
-//start game score and question counter is 0, display question to player
-
+//start game function
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -60,8 +60,23 @@ startGame = () => {
     getNewQuestion();
 };
 
+//countdown timer for each question
+timer = () => {
+    // set timer decrease 1 every second
+    time = time - 1;
+    if (time < 30) {
+        // display time left
+        timeleft.innerHTML = `<i class="far fa-clock"></i> : ${time} seconds`;
+    }
+    if (time < 1) {
+        // moves to next question when time is up
+        clearInterval(update);
+        getNewQuestion();
+    }
+};
 
-//If the player has answered all questions, add their score to local storgae and go to the end page
+
+
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -69,13 +84,9 @@ getNewQuestion = () => {
         return window.location.assign('end.html');
     }
 
-//Increment the counter and display the question the user is currently on out of the max questions they need to answer
     questionCounter++;
     PROGRESS_TEXT.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
 
-/*Keep track of what question the player is currently on. Once player has selected their choice
-remove current question and choices and display new question and choices that the user has yet to answer
-*/
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
@@ -85,35 +96,47 @@ remove current question and choices and display new question and choices that th
         choice.innerText = currentQuestion['choice' + number];
     });
 
+    //Removes used questions
     availableQuestions.splice(questionsIndex, 1);
-    
+    // set timer of 30s for each question
+    time = 30;
+    update = setInterval("timer()", 1000);
     acceptingAnswers = true;
 };
 
-//For selected answers display correct and incorrect css depending on answer
 CHOICES.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset.number;
+        const selectedAnswer = selectedChoice.dataset["number"];
 
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' :
-        'incorrect';
 
-        //if answer is correct add to score 
-        if(classToApply === 'correct') {
+        if (selectedAnswer == currentQuestion.answer) {
+            classToApply = "correct";
             incrementScore(SCORE_POINTS);
+        } else{
+            classToApply = "incorrect";
         }
+
+        if (classToApply === "incorrect"){
+            
+        }
+
+        
+
+        
+
 
         selectedChoice.parentElement.classList.add(classToApply);
 
-        //when choice is selected move onto next question 
+        //adds slight delay before next question and removes css styling to answers
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();
-        }, 1000);
+            clearInterval(update);
+        }, 600);
     });
 });
 
