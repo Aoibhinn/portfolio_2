@@ -64,18 +64,6 @@ body{
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.choice-container{
-    display: block;
-    margin-left: 2rem;
-    margin-bottom: 0.8rem;
-    width: 80%;
-    border-radius: 6px;
-    background: #d6eafd;
-    font-size: 1rem;
-    min-width: 15rem;
-    border-radius: 2px;
-    border: 1px solid #98cbfa;
-}
 
 #progressText{
     float: left;
@@ -102,11 +90,24 @@ body{
     transform: scale(1.02);
 }
 
-.choice-text{
-    text-align: left;
-    margin-left: 1rem;
+.choice-container{
+    display: block;
+    margin-left: 2rem;
+    margin-bottom: 0.8rem;
+    width: 80%;
+    border-radius: 6px;
+    background: #d6eafd;
+    font-size: 1rem;
+    min-width: 15rem;
+    border-radius: 2px;
 }
 
+.choice-text{
+    text-align: left;
+    /* margin-left: 1rem; */
+    border: 1px solid #98cbfa;
+    padding: 1rem;
+} 
 
 .correct{
     background: linear-gradient(#99e599, #99e599)
