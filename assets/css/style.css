@@ -119,6 +119,12 @@ body{
   
 }
 
+.fa-home{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #f00070;
+}
+
 /* End game page */
 
 .end-form-container {
