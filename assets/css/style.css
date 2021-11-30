@@ -56,12 +56,13 @@ body{
 /* game page styling */
 
 #game{
-    background-color: #fff;
-    color: #454A4F;
+    background-color: black;
+    color: #f00070;
     width: 50rem;
     height: 30rem;
     border-radius: 3px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #f00070;
 }
 
 
@@ -86,7 +87,7 @@ body{
 
 .choice-container:hover{
     cursor: pointer;
-    background-color: #84c1f9;
+    background-color: white;
     transform: scale(1.02);
 }
 
@@ -96,7 +97,7 @@ body{
     margin-bottom: 0.8rem;
     width: 80%;
     border-radius: 6px;
-    background: #d6eafd;
+    background: black;
     font-size: 1rem;
     min-width: 15rem;
     border-radius: 2px;
@@ -104,8 +105,7 @@ body{
 
 .choice-text{
     text-align: left;
-    /* margin-left: 1rem; */
-    border: 1px solid #98cbfa;
+    border: 1px solid #f00070;
     padding: 1rem;
 } 
 
