@@ -135,6 +135,10 @@ body{
     max-width: 30rem;
 }
 
+#end-text{
+    text-align: center;
+}
+
 input{
     margin-bottom: 1rem;
     width: 15rem;
