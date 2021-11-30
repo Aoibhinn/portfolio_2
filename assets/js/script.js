@@ -117,6 +117,7 @@ CHOICES.forEach(choice => {
             classToApply = "correct";
             incrementScore(SCORE_POINTS);
         } else{
+            classToApply = "incorrect";
             alert(`Sorry the correct answer was ${currentQuestion.answer}!`,)
         }
 
