@@ -37,7 +37,7 @@ let questions = [
         choice2: 'Hypertext Preprogramming',
         choice3: 'Hypertext Programming',
         choice4: 'Hypertext Preprocessor',
-        answer: 3,
+        answer: 1,
     },
     {
         question: 'What does SQL stand for?',
