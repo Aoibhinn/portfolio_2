@@ -61,17 +61,17 @@ For this project I have used one image to be the main background across all the 
  
 For this project I wanted the colour to be vibrant and really pop out against the darker background that I chose. The main colour used is a neon pink that is also included in the background image. I have used this colour throughout all the differnt elements of the game including text colour and buttons. 
  
-  * #### Typography
+* #### Typography
 
   The font I have used in this project is **Raleway** which was imported from **Google Fonts**. I chose to just use one font for all text throughout the quiz as I feel it's easy to read and works well with the background image.
  
- ## Features
+## Features
  
 The design and layout of the game is responsvie to all different screen sizes and remains attractive and easy to use no matter what device it is being played on.
  
- * ### Home Page
-   * **High Scores** button that when clicked will link the user to the top 5 highscores. These scores are stored and pulled from local storage.
-   * **Play** button that links the user to the main game page.
+  * ### Home Page
+    * **High Scores** button that when clicked will link the user to the top 5 highscores. These scores are stored and pulled from local storage.
+    * **Play** button that links the user to the main game page.
  
  * ### Game Page
    * A question counter that shows the user which question number they are on out of 4.
@@ -87,31 +87,31 @@ The design and layout of the game is responsvie to all different screen sizes an
    * A button to take the user back to the home page.
 
 
-   ## Technologies used
+## Technologies used
  ### Languages used
  
- * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) <br>
+  * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) <br>
     The project uses HTML5 to make up the basic elements and structure of the website.
- * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) <br>
+  * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) <br>
     I have used CSS3 to add my own styling to the project including layout, fonts and colours.
- * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) <br>
+  * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) <br>
     JavaScript has been used to implement the site's interactive features, Allowing the user to be interactive with the game.
 
  ### Frameworks, Libraries and Programs Used
  
- * [Balsamiq](https://balsamiq.com/) <br>
+  * [Balsamiq](https://balsamiq.com/) <br>
     I used balsamiq to design and draw up my wireframes before starting the project.
-   * [Font Awesome](https://fontawesome.com/) <br>
+  * [Font Awesome](https://fontawesome.com/) <br>
     This was used for the logos of the social media links on my home page and also the clock symbol and home button on the game page. 
- * [Google Fonts](https://fonts.google.com/) <br>
+  * [Google Fonts](https://fonts.google.com/) <br>
     Google fonts was used throughout the project to import my selected font **Raleway**.
-   * [Gitpod](https://www.gitpod.io/) <br>
+  * [Gitpod](https://www.gitpod.io/) <br>
     Gitpod was the text editor I used to write all of my HTML, CSS and JavaScript code to style, structure and make the game interactive.
- * [Git](https://git-scm.com/) <br>
+  * [Git](https://git-scm.com/) <br>
     Git is used as version control software to add, commit and push code to my GitHub repository where the code is then stored.
- * [GitHub](https://github.com/) <br>
+  * [GitHub](https://github.com/) <br>
     I have used GitHub as a remote repository to push and store the committed changes to my project from Git. GitHub pages has also been used to deploy my live site.
- * [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) <br>
+   * [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) <br>
     I have used Google chromes built in developer tools to help with the styling of the site, selecting colors and to help fix any bugs I found.
 
 
