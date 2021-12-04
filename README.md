@@ -43,9 +43,6 @@ I want to keep a consistent theme throughout the site by using the same colour c
  * #### Wireframes
  
 To make my wireframes I have used balsamiq. I have done one for each page and did a design for larger screens and smaller screens to show how the site will be responsive to screen size and change accordingly. The links to each one are below.<br>
- **__For easier viewing I would recommend clicking the
- dowload button above the wireframe image as they appear much larger when viewed directly through github__**
-
 ![home_wireframe](assets/images/home_wireframe.png)
 ![css_q_wireframe](assets/images/css_q_wireframe.png)
 ![HTML_q_wireframe](assets/images/html_q_wireframe.png)
@@ -53,4 +50,11 @@ To make my wireframes I have used balsamiq. I have done one for each page and di
 ![SQL_q_wireframe](assets/images/sql_q_wireframe.png)
 ![save_score_wireframe](assets/images/save_score_wireframe.png)
 ![leaderboard_wireframe](assets/images/leaderboard_wireframe.png)
+
+ * #### Imagery
+ 
+For this project I have used one image to be the main background across all the different pages of the site. It is an image with some code written as I felt it suited the theme of the quiz. I also placed a transparent overlay on top of the image to soften the brightness of it, and help enhance the interactive parts of the site for the user making it all stand out clearly and be visually appealing as well as usable and easy to see.
+
+<img src="assets/images/code_background.png" width="450" height="300">
+
 
