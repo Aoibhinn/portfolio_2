@@ -97,6 +97,26 @@ The design and layout of the game is responsvie to all different screen sizes an
  * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) <br>
     JavaScript has been used to implement the site's interactive features, Allowing the user to be interactive with the game.
 
+ ### Frameworks, Libraries and Programs Used
+ 
+ * [Balsamiq](https://balsamiq.com/) <br>
+    I used balsamiq to design and draw up my wireframes before starting the project.
+   * [Font Awesome](https://fontawesome.com/) <br>
+    This was used for the logos of the social media links on my home page and also the clock symbol and home button on the game page. 
+ * [Google Fonts](https://fonts.google.com/) <br>
+    Google fonts was used throughout the project to import my selected font **Raleway**.
+   * [Gitpod](https://www.gitpod.io/) <br>
+    Gitpod was the text editor I used to write all of my HTML, CSS and JavaScript code to style, structure and make the game interactive.
+ * [Git](https://git-scm.com/) <br>
+    Git is used as version control software to add, commit and push code to my GitHub repository where the code is then stored.
+ * [GitHub](https://github.com/) <br>
+    I have used GitHub as a remote repository to push and store the committed changes to my project from Git. GitHub pages has also been used to deploy my live site.
+ * [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) <br>
+    I have used Google chromes built in developer tools to help with the styling of the site, selecting colors and to help
+    fix any bugs I found.
+
+
+
 
 
 
