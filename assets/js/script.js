@@ -60,20 +60,20 @@ startGame = () => {
     getNewQuestion();
 };
 
-// //countdown timer for each question
-// timer = () => {
-//     // set timer decrease 1 every second
-//     time = time - 1;
-//     if (time < 30) {
-//         // display time left
-//         timeleft.innerHTML = `<i class="far fa-clock"></i> : ${time} seconds`;
-//     }
-//     if (time < 1) {
-//         // moves to next question when time is up
-//         clearInterval(update);
-//         getNewQuestion();
-//     }
-// };
+//countdown timer for each question
+timer = () => {
+    // set timer decrease 1 every second
+    time = time - 1;
+    if (time < 30) {
+        // display time left
+        timeleft.innerHTML = `<i class="far fa-clock"></i> : ${time} seconds`;
+    }
+    if (time < 1) {
+        // moves to next question when time is up
+        clearInterval(update);
+        getNewQuestion();
+    }
+};
 
 
 
