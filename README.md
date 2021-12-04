@@ -132,6 +132,13 @@ The design and layout of the game is responsvie to all different screen sizes an
  
  - After testing the game many times across multiple devices I am confident that the features are working as intended. The question counter runs from 1 to 4 and ends the game after the 4th question taking the user to the end game page and displaying their score. The score increments as expected, awarding 10 points for each correct answer and the time decreases from 30 seconds for each question. If the time runs out on a question it automatically ends the game and redirects user to save score page.
 
+  * Question counter <br>
+ <img src="assets/images/question_counter.png" width="350" height="150">
+ * Score counter <br>
+ <img src="assets/images/score_counter.png" width="350" height="150">
+ * Question timer <br>
+ <img src="assets/images/Timer.png" width="350" height="150">
+
 ### Returning/ Frequent Visitor Goals
 
 **1. I want to be able to record my score and try to get on a leaderboard.**
