@@ -45,5 +45,6 @@ I want to keep a consistent theme throughout the site by using the same colour c
 To make my wireframes I have used balsamiq. I have done one for each page and did a design for larger screens and smaller screens to show how the site will be responsive to screen size and change accordingly. The links to each one are below.<br>
  **__For easier viewing I would recommend clicking the
  dowload button above the wireframe image as they appear much larger when viewed directly through github__**
- * [Home wireframe](/workspace/portfolio_2/assets/images/home wireframe.png)
+
+![Correct and Incorrect Answers](assets/images/leaderboard wireframe.png)
 
