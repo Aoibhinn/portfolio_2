@@ -87,4 +87,16 @@ The design and layout of the game is responsvie to all different screen sizes an
    * A button to take the user back to the home page.
 
 
+   ## Technologies used
+ ### Languages used
+ 
+ * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) <br>
+    The project uses HTML5 to make up the basic elements and structure of the website.
+ * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) <br>
+    I have used CSS3 to add my own styling to the project including layout, fonts and colours.
+ * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) <br>
+    JavaScript has been used to implement the site's interactive features, Allowing the user to be interactive with the game.
+
+
+
 
