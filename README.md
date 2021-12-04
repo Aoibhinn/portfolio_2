@@ -112,8 +112,21 @@ The design and layout of the game is responsvie to all different screen sizes an
  * [GitHub](https://github.com/) <br>
     I have used GitHub as a remote repository to push and store the committed changes to my project from Git. GitHub pages has also been used to deploy my live site.
  * [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) <br>
-    I have used Google chromes built in developer tools to help with the styling of the site, selecting colors and to help
-    fix any bugs I found.
+    I have used Google chromes built in developer tools to help with the styling of the site, selecting colors and to help fix any bugs I found.
+
+
+## Testing
+ 
+### Testing User Stories and Site Goals
+ 
+### Site Goals
+ 
+ **1. I want the site to be attractive, responsive and easy to use for the user.**
+ 
+ - To get feedback on the visual aspect of the project it has been shared with many friends and family and also other students of code institute via the slack portal. The feedback on the visual aspect has been really good, with the choice of colors and fonts receiving very positive reviews.
+ - I have tested the site on differnet screen sizes such as Iphone 11, Macbook air.
+ The site responds well to the different screen sizes and the layout adapts as intended. 
+ - The game has a clear and simple layout making it easy for the user to navigate through and play. With contrasting colours making all the different features clear and visible for the user to see.
 
 
 
