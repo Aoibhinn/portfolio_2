@@ -47,4 +47,4 @@ To make my wireframes I have used balsamiq. I have done one for each page and di
  dowload button above the wireframe image as they appear much larger when viewed directly through github__**
 
 ![home_wireframe](assets/images/home_wireframe.png)
-![css_q_wireframe](assets/images/css q wireframe.png)
+![css_q_wireframe](assets/images/css_q_wireframe.png)
