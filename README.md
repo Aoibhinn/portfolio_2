@@ -24,15 +24,15 @@ I want to create a music quiz game to test the players coding terminology knowle
  ### User Stories
  
  * #### First Time Visitor Goals
-   1. I want the game to be attractive and and easy to read all text.
-   2. I want the game to be responsive to whichever device I am playing it on.
-   3. I want to be able to navigate around the different pages of the site.
-   4. I want to be given a choice of varied questions.
+  1. I want the game to be attractive and and easy to read all text.
+  2. I want the game to be responsive to whichever device I am playing it on.
+  3. I want to be able to navigate around the different pages of the site.
+  4. I want to be given a choice of varied questions.
 
   * #### Returning/ Frequent Visitor Goals
-   1. I want to be given varied questions each time I play.
-   2. I want to be able to record my score and try to get on a leaderboard.
-   3. I want to see other users previous scores so I can try to beat them.
+  1. I want to be given varied questions each time I play.
+  2. I want to be able to record my score and try to get on a leaderboard.
+  3. I want to see other users previous scores so I can try to beat them.
 
     
 ### Design
