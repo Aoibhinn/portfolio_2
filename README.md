@@ -153,11 +153,11 @@ The design and layout of the game is responsvie to all different screen sizes an
 ### Features Testing
 
 * ### Home Page
-   **1.**High Scores** button that when clicked will link the user to the top 5 highscores. These scores are stored and pulled from local storage.**
+   **1.** **High Scoresbutton that when clicked will link the user to the top 5 highscores. These scores are stored and pulled from local storage.**
  
    - This function is working as intended, it has been tested on different devices with different scores being saved to the local storage. Then displaying the top 5 highest scores in the correct order.
  
-   **2.** Play button that links the user to the main game page.
+   **2.** **Play button that links the user to the main game page.**
  
    - This button has been tested many times across various devices and works as intended.
 
