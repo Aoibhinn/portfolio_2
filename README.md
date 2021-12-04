@@ -2,7 +2,7 @@
  
 <img src="#">
  
-[View the live project here](#) <br>
+[View the live project here](https://aoibhinn.github.io/portfolio_2/) <br>
  
 ## About
  
@@ -218,6 +218,9 @@ My project was deployed to GitHub pages using the following steps:
 5. The page will automatically refresh itself and after a few moments the published site link will be availible to click
 on the **GitHub Page** section.
 
+The live link can be found here - https://aoibhinn.github.io/portfolio_2/
+
+
 ### Forking the GitHub Repository
  
 Forking a repository enables us to make a copy of the original repository on our GitHub account so we can view it and make changes with out affecting the original work.
@@ -235,7 +238,7 @@ To make a clone of my project use the following steps:
 4. Once dowloaded, you can extract the zip file's contents and save to a desktop and run the website locally.
 
 
-### Code & Content
+### Code, Content & credits
  
 * [Google](https://www.google.com/) was used to find the background image used on each page of the project. It was also used extensively to help research the project, find solutions to any quries or issues I had and help find example codes to use in my own project.
 * [W3schools](https://www.w3schools.com/) was used to help build the spinning loader displayed before the questions are loaded.
