@@ -28,3 +28,15 @@ I want to create a music quiz game to test the players coding terminology knowle
    2. I want the game to be responsive to whichever device I am playing it on.
    3. I want to be able to navigate around the different pages of the site.
    4. I want to be given a choice of varied questions.
+
+   * #### Returning/ Frequent Visitor Goals
+   1. I want to be given varied questions each time I play.
+   2. I want to be able to record my score and try to get on a leaderboard.
+   3. I want to see other users previous scores so I can try to beat them.
+
+    
+### Design
+ 
+Because of the topic of the quiz, I want the design of the website to have a digital/coding themed background. It needs to be pleasing for the user to look at with the game elements easily distinguishable from the background so that everything is clear and easy to use. To do this I will have a fairly dark background with bright neon colors being used for the game so they will contrast nicely together.
+I want to keep a consistent theme throughout the site by using the same colour combinations on each page. With the site being attractive for the user and easy to use I am hoping the user will want to keep returning to play the game.
+ 
