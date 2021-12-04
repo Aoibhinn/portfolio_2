@@ -147,7 +147,7 @@ The design and layout of the game is responsvie to all different screen sizes an
  
    - This function is working as intended, it has been tested on different devices with different scores being saved to the local storage. Then displaying the top 5 highest scores in the correct order.
  
-   **2.**Play** button that links the user to the main game page.**
+   **2.** Play button that links the user to the main game page.
  
    - This button has been tested many times across various devices and works as intended.
 
@@ -195,6 +195,41 @@ The design and layout of the game is responsvie to all different screen sizes an
  - No errors were returned for the end.html file when passing through the official ![W3C validator end.html](assets/images/end_page_validated.png)
  
  
- 
 - CSS
  - Two errors found when passing through the official [Two errors found on (Jigsaw) validator](assets/images/two_errors_W3C.png). These were resolved [(Jigsaw) validator](/workspace/portfolio_2/assets/images/CSS_Validated.png
+
+## Deployment
+
+### Initial creation
+ 
+I created the repository using the following steps:
+1. Logging into my [GitHub](https://github.com/Aoibhinn/portfolio_2) account and clickng the green button near the top left of the page displaying the text **NEW.**
+2. This took me to a page with the option to create a new repository. Under *repository template* I clicked on the *code institute* template.
+I chose a name for the repository suitable for the project and then clicked the *create repository* button.
+3. I opened the new repository and clicked the green *gitpod* button to create a new workplace in Gitpod for writing and editing my code to develop the site.
+
+ ### Github Pages
+ 
+My project was deployed to GitHub pages using the following steps:
+1. Logging in to my [GitHub](https://github.com/Aoibhinn/portfolio_2) account and opening the relevant repository.
+2. Click on the settings button, located just above the green **GITPOD** button.
+3. In settings scroll down to the **GitHub Pages** section.
+4. Under **source** click the dropdown button labelled **None** and select **Master Branch.**
+5. The page will automatically refresh itself and after a few moments the published site link will be availible to click
+on the **GitHub Page** section.
+
+### Forking the GitHub Repository
+ 
+Forking a repository enables us to make a copy of the original repository on our GitHub account so we can view it and make changes with out affecting the original work.
+This is done using the following steps:
+1. Log in to [GitHub](https://github.com/Aoibhinn/portfolio_2) account and select the relevant repository.
+2. To the top right of the page there are three the buttons, the furthest right says **Fork.** Click on this button.
+3. A copy of the original repository will now be in your account.
+
+### Making a Clone
+ 
+To make a clone of my project use the following steps:
+1. Go to my [account](https://github.com/Aoibhinn/portfolio_2) and locate relevant repository.
+2. Next to the green **Gitpod** button, click on **CODE.**
+3. Click on **Download Zip.**
+4. Once dowloaded, you can extract the zip file's contents and save to a desktop and run the website locally.
