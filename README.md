@@ -29,7 +29,7 @@ I want to create a music quiz game to test the players coding terminology knowle
    3. I want to be able to navigate around the different pages of the site.
    4. I want to be given a choice of varied questions.
 
-   * #### Returning/ Frequent Visitor Goals
+  * #### Returning/ Frequent Visitor Goals
    1. I want to be given varied questions each time I play.
    2. I want to be able to record my score and try to get on a leaderboard.
    3. I want to see other users previous scores so I can try to beat them.
