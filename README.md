@@ -124,9 +124,13 @@ The design and layout of the game is responsvie to all different screen sizes an
  **1. I want the site to be attractive, responsive and easy to use for the user.**
  
  - To get feedback on the visual aspect of the project it has been shared with many friends and family and also other students of code institute via the slack portal. The feedback on the visual aspect has been really good, with the choice of colors and fonts receiving very positive reviews.
- - I have tested the site on differnet screen sizes such as Iphone 11, Macbook air.
+ - I have tested the site on different screen sizes such as Iphone 11, Macbook air.
  The site responds well to the different screen sizes and the layout adapts as intended. 
  - The game has a clear and simple layout making it easy for the user to navigate through and play. With contrasting colours making all the different features clear and visible for the user to see.
+
+  **2. I want the site to work as intended incrementing the quesitons and score as the user progresses, with the timer going down for each question.**
+ 
+ - After testing the game many times across multiple devices I am confident that the features are working as intended. The question counter runs from 1 to 4 and ends the game after the 4th question taking the user to the end game page and displaying their score. The score increments as expected, awarding 10 points for each correct answer and the time decreases from 30 seconds for each question. If the time runs out on a question it automatically ends the game and redirects user to save score page.
 
 
 
