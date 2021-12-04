@@ -162,90 +162,89 @@ The design and layout of the game is responsvie to all different screen sizes an
    - This button has been tested many times across various devices and works as intended.
 
  * ### Game Page
-   **1.A question counter that shows the user which question number they are on out of 4.**
-   **2.A score counter that shows the user what they're current score is and that increments by 10 for every correct answer.**
+    **1.A question counter that shows the user which question number they are on out of 4.**
+    **2.A score counter that shows the user what they're current score is and that increments by 10 for every correct answer.**
  
-   - Both of the above have been tested many times on differnet devices and increment the question number and score as expected everytime.
+    - Both of the above have been tested many times on differnet devices and increment the question number and score as expected everytime.
 
-  **3.A question and 4 possible answers to choose from. The selected answer will turn red if it is wrong and green if it is correct.**
+    **3.A question and 4 possible answers to choose from. The selected answer will turn red if it is wrong and green if it is correct.**
  
-   - The answers are displayed in different orders each time. When the correct answer is clicked it turns green. When it's wrong it will display red and the correct answer is displayed as a result.
+    - The answers are displayed in different orders each time. When the correct answer is clicked it turns green. When it's wrong it will display red and the correct answer is displayed as a result.
 
-   **4.A 30 second timer that counts down on screen and resets for each new question.**
+    **4.A 30 second timer that counts down on screen and resets for each new question.**
  
-   - The timer for each question displays and works as intended with the time restarting for each new question and counting down from 30 at the correct speed.
+    - The timer for each question displays and works as intended with the time restarting for each new question and counting down from 30 at the correct speed.
 
-  **5.A home button that will take the user back to the main page.**
+    **5.A home button that will take the user back to the main page.**
  
-   - A simple home logo button will take the user back to the main menu on the home page. This link has been checked many times and works as expected.
+    - A simple home logo button will take the user back to the main menu on the home page. This link has been checked many times and works as expected.
 
    * ### End Page
+   
    **1.A display of the users end score.**
  
-   - This has been checked and displays the correct score after the 10th question is answered.
+    - This has been checked and displays the correct score after the 10th question is answered.
 
-  **3.The option for the user to enter their name and save their score which will be added to the high score page if the score is high enough.**
+    **3.The option for the user to enter their name and save their score which will be added to the high score page if the score is high enough.**
  
-   - I have checked this using different devices and also asked friends and family to play the game and save their score to see if they appear on the leaderboard. Each time it has worked as intended.
+    - I have checked this using different devices and also asked friends and family to play the game and save their score to see if they appear on the leaderboard. Each time it has worked as intended.
 
-  **4.A button to let the user play again.**
+    **4.A button to let the user play again.**
  
-   - At the end of the game the user has the option to play again. By clicking the *Play Again* button the user is automatically taken back to the start of the game. This works as expected.
+    - At the end of the game the user has the option to play again. By clicking the *Play Again* button the user is automatically taken back to the start of the game. This works as expected.
  
-  **5.A button to take the user back to the home page.**
+    **5.A button to take the user back to the home page.**
  
-   - At the end of the game the user has the option to return to the home page. By clicking the *Home* button the user is automatically taken back to the main menu This works as expected.
+    - At the end of the game the user has the option to return to the home page. By clicking the *Home* button the user is automatically taken back to the main menu This works as expected.
 
   ### Validator Testing
  
-- HTML
- - One error was returned when passing through the official W3C validator. There was a stray end tag on the index.html file. This has since been removed. ![Error found through W3C on index.html](assets/images/Error_found_through_W3C_validator.png)
- - No errors were returned for the highscores.html file when passing through the official ![W3C validator highscores.html](assets/images/highscore_page_validated.png)
- - No errors were returned for the game.html file when passing through the official ![W3C validator game.html](assets/images/game_page_validated.png)
- - No errors were returned for the end.html file when passing through the official ![W3C validator end.html](assets/images/end_page_validated.png)
+  - HTML
+  - One error was returned when passing through the official W3C validator. There was a stray end tag on the index.html file. This has since been removed. ![Error found through W3C on index.html](assets/images/Error_found_through_W3C_validator.png)
+  - No errors were returned for the highscores.html file when passing through the official ![W3C validator highscores.html](assets/images/highscore_page_validated.png)
+   - No errors were returned for the game.html file when passing through the official ![W3C validator game.html](assets/images/game_page_validated.png)
+  - No errors were returned for the end.html file when passing through the official ![W3C validator end.html](assets/images/end_page_validated.png)
  
  
-- CSS
- - Two errors found when passing through the official [Two errors found on (Jigsaw) validator](assets/images/two_errors_W3C.png). These were resolved [(Jigsaw) validator](/workspace/portfolio_2/assets/images/CSS_Validated.png
+  - CSS
+  - Two errors found when passing through the official [Two errors found on (Jigsaw) validator](assets/images/two_errors_W3C.png). These were resolved [(Jigsaw) validator](/workspace/portfolio_2/assets/images/CSS_Validated.png
 
 ## Deployment
 
 ### Initial creation
  
 I created the repository using the following steps:
-1. Logging into my [GitHub](https://github.com/Aoibhinn/portfolio_2) account and clickng the green button near the top left of the page displaying the text **NEW.**
-2. This took me to a page with the option to create a new repository. Under *repository template* I clicked on the *code institute* template.
-I chose a name for the repository suitable for the project and then clicked the *create repository* button.
-3. I opened the new repository and clicked the green *gitpod* button to create a new workplace in Gitpod for writing and editing my code to develop the site.
+  1. Logging into my [GitHub](https://github.com/Aoibhinn/portfolio_2) account and clickng the green button near the top left of the page displaying the text **NEW.**
+  2. This took me to a page with the option to create a new repository. Under *repository template* I clicked on the *code institute* template. I chose a name for the repository suitable for the project and then clicked the *create repository* button.
+  3. I opened the new repository and clicked the green *gitpod* button to create a new workplace in Gitpod for writing and editing my code to develop the site.
 
  ### Github Pages
  
-My project was deployed to GitHub pages using the following steps:
-1. Logging in to my [GitHub](https://github.com/Aoibhinn/portfolio_2) account and opening the relevant repository.
-2. Click on the settings button, located just above the green **GITPOD** button.
-3. In settings scroll down to the **GitHub Pages** section.
-4. Under **source** click the dropdown button labelled **None** and select **Master Branch.**
-5. The page will automatically refresh itself and after a few moments the published site link will be availible to click
-on the **GitHub Page** section.
+  My project was deployed to GitHub pages using the following steps:
+  1. Logging in to my [GitHub](https://github.com/Aoibhinn/portfolio_2) account and opening the relevant repository.
+  2. Click on the settings button, located just above the green **GITPOD** button.
+  3. In settings scroll down to the **GitHub Pages** section.
+  4. Under **source** click the dropdown button labelled **None** and select **Master Branch.**
+  5. The page will automatically refresh itself and after a few moments the published site link will be availible to click on the **GitHub Page** section.
 
-The live link can be found here - https://aoibhinn.github.io/portfolio_2/
+  The live link can be found here - https://aoibhinn.github.io/portfolio_2/
 
 
 ### Forking the GitHub Repository
  
-Forking a repository enables us to make a copy of the original repository on our GitHub account so we can view it and make changes with out affecting the original work.
-This is done using the following steps:
-1. Log in to [GitHub](https://github.com/Aoibhinn/portfolio_2) account and select the relevant repository.
-2. To the top right of the page there are three the buttons, the furthest right says **Fork.** Click on this button.
-3. A copy of the original repository will now be in your account.
+  Forking a repository enables us to make a copy of the original repository on our GitHub account so we can view it and make changes with out affecting the original work.
+  This is done using the following steps:
+  1. Log in to [GitHub](https://github.com/Aoibhinn/portfolio_2) account and select the relevant repository.
+  2. To the top right of the page there are three the buttons, the furthest right says **Fork.** Click on this button.
+  3. A copy of the original repository will now be in your account.
 
 ### Making a Clone
  
-To make a clone of my project use the following steps:
-1. Go to my [account](https://github.com/Aoibhinn/portfolio_2) and locate relevant repository.
-2. Next to the green **Gitpod** button, click on **CODE.**
-3. Click on **Download Zip.**
-4. Once dowloaded, you can extract the zip file's contents and save to a desktop and run the website locally.
+  To make a clone of my project use the following steps:
+  1. Go to my [account](https://github.com/Aoibhinn/portfolio_2) and locate relevant repository.
+  2. Next to the green **Gitpod** button, click on **CODE.**
+  3. Click on **Download Zip.**
+  4. Once dowloaded, you can extract the zip file's contents and save to a desktop and run the website locally.
 
 
 ### Code, Content & credits
