@@ -233,3 +233,13 @@ To make a clone of my project use the following steps:
 2. Next to the green **Gitpod** button, click on **CODE.**
 3. Click on **Download Zip.**
 4. Once dowloaded, you can extract the zip file's contents and save to a desktop and run the website locally.
+
+
+### Code & Content
+ 
+* [Google](https://www.google.com/) was used to find the background image used on each page of the project. It was also used extensively to help research the project, find solutions to any quries or issues I had and help find example codes to use in my own project.
+* [W3schools](https://www.w3schools.com/) was used to help build the spinning loader displayed before the questions are loaded.
+* [Muhanad Hasan](https://www.youtube.com/watch?v=9-5URe9CykA&t=113s) This video helped me to make my own countdown timer for each question.
+* [Stackoverflow](https://stackoverflow.com/) was used to help find solutions to the issues I had whilst building my project.
+- [BrianDesigns] The funcationlaity for the game was inspired by Brian Designs video on creating a short quiz https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2749s
+- [FontAwesome] The icon on the home page were taken from font awesome (https://fontawesome.com/)
