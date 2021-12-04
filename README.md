@@ -57,4 +57,9 @@ For this project I have used one image to be the main background across all the 
 
 <img src="assets/images/code_background.png" width="450" height="300">
 
+ * #### Color Scheme
+ 
+For this project I wanted the colour to be vibrant and really pop out against the darker background that I chose. The main colour used is a neon pink that is also included in the background image. I have used this colour throughout all the differnt elements of the game including text colour and buttons. 
+ 
+
 
