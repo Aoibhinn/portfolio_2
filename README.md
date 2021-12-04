@@ -61,5 +61,10 @@ For this project I have used one image to be the main background across all the 
  
 For this project I wanted the colour to be vibrant and really pop out against the darker background that I chose. The main colour used is a neon pink that is also included in the background image. I have used this colour throughout all the differnt elements of the game including text colour and buttons. 
  
+  * #### Typography
+
+  The font I have used in this project is **Raleway** which was imported from **Google Fonts**. I chose to just use one font for all text throughout the quiz as I feel it's easy to read and works well with the background image.
+ 
+
 
 
