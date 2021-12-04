@@ -1,6 +1,6 @@
 # Milestone Project Two | Are you ready to test your coding knowledge
  
-<img src="#">
+<img src="assets/images/Ready_to_test_your_knowledge.png">
  
 [View the live project here](https://aoibhinn.github.io/portfolio_2/) <br>
  
