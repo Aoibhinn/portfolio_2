@@ -65,6 +65,26 @@ For this project I wanted the colour to be vibrant and really pop out against th
 
   The font I have used in this project is **Raleway** which was imported from **Google Fonts**. I chose to just use one font for all text throughout the quiz as I feel it's easy to read and works well with the background image.
  
+ ## Features
+ 
+The design and layout of the game is responsvie to all different screen sizes and remains attractive and easy to use no matter what device it is being played on.
+ 
+ * ### Home Page
+   * **High Scores** button that when clicked will link the user to the top 5 highscores. These scores are stored and pulled from local storage.
+   * **Play** button that links the user to the main game page.
+ 
+ * ### Game Page
+   * A question counter that shows the user which question number they are on out of 4.
+   * A score counter that shows the user what they're current score is and that increments by 10 for every correct answer.
+   * A question and 4 possible answers to choose from. The selected answer will turn red if it is wrong with an alert pop up displaying the correct answer. If the answer is correct the answer will turn green.
+   * A 30 second timer that counts down on screen and resets for each new question.
+   * A home button that will take the user back to the main page.
+   * 
+ * ### End Page
+   * A display of the users end score.
+   * The option for the user to enter their name and save their score which will be added to the highscore page if the score is high enough.
+   * A button to let the user play again.
+   * A button to take the user back to the home page.
 
 
 
