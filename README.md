@@ -132,8 +132,69 @@ The design and layout of the game is responsvie to all different screen sizes an
  
  - After testing the game many times across multiple devices I am confident that the features are working as intended. The question counter runs from 1 to 4 and ends the game after the 4th question taking the user to the end game page and displaying their score. The score increments as expected, awarding 10 points for each correct answer and the time decreases from 30 seconds for each question. If the time runs out on a question it automatically ends the game and redirects user to save score page.
 
+### Returning/ Frequent Visitor Goals
+
+**1. I want to be able to record my score and try to get on a leaderboard.**
+ 
+ - When finishing the game the user will have their score displayed on the screen. Depending on the score they achieve will bring up a different message. From here they will have the choice to enter their name and save their score. The top 5 scores will be saved to a leaderboard that can be viewed from the homepage. The user will be able to see if their name is on it from here.
+ - The users scores are saved to local storage.
 
 
+### Features Testing
 
+* ### Home Page
+   **1.**High Scores** button that when clicked will link the user to the top 5 highscores. These scores are stored and pulled from local storage.**
+ 
+   - This function is working as intended, it has been tested on different devices with different scores being saved to the local storage. Then displaying the top 5 highest scores in the correct order.
+ 
+   **2.**Play** button that links the user to the main game page.**
+ 
+   - This button has been tested many times across various devices and works as intended.
 
+ * ### Game Page
+   **1.A question counter that shows the user which question number they are on out of 4.**
+   **2.A score counter that shows the user what they're current score is and that increments by 10 for every correct answer.**
+ 
+   - Both of the above have been tested many times on differnet devices and increment the question number and score as expected everytime.
 
+  **3.A question and 4 possible answers to choose from. The selected answer will turn red if it is wrong and green if it is correct.**
+ 
+   - The answers are displayed in different orders each time. When the correct answer is clicked it turns green. When it's wrong it will display red and the correct answer is displayed as a result.
+
+   **4.A 30 second timer that counts down on screen and resets for each new question.**
+ 
+   - The timer for each question displays and works as intended with the time restarting for each new question and counting down from 30 at the correct speed.
+
+  **5.A home button that will take the user back to the main page.**
+ 
+   - A simple home logo button will take the user back to the main menu on the home page. This link has been checked many times and works as expected.
+
+   * ### End Page
+   **1.A display of the users end score.**
+ 
+   - This has been checked and displays the correct score after the 10th question is answered.
+
+  **3.The option for the user to enter their name and save their score which will be added to the high score page if the score is high enough.**
+ 
+   - I have checked this using different devices and also asked friends and family to play the game and save their score to see if they appear on the leaderboard. Each time it has worked as intended.
+
+  **4.A button to let the user play again.**
+ 
+   - At the end of the game the user has the option to play again. By clicking the *Play Again* button the user is automatically taken back to the start of the game. This works as expected.
+ 
+  **5.A button to take the user back to the home page.**
+ 
+   - At the end of the game the user has the option to return to the home page. By clicking the *Home* button the user is automatically taken back to the main menu This works as expected.
+
+  ### Validator Testing
+ 
+- HTML
+ - One error was returned when passing through the official W3C validator. There was a stray end tag on the index.html file. This has since been removed. ![Error found through W3C on index.html](assets/images/Error_found_through_W3C_validator.png)
+ - No errors were returned for the highscores.html file when passing through the official ![W3C validator highscores.html](assets/images/highscore_page_validated.png)
+ - No errors were returned for the game.html file when passing through the official ![W3C validator game.html](assets/images/game_page_validated.png)
+ - No errors were returned for the end.html file when passing through the official ![W3C validator end.html](assets/images/end_page_validated.png)
+ 
+ 
+ 
+- CSS
+ - Two errors found when passing through the official [Two errors found on (Jigsaw) validator](assets/images/two_errors_W3C.png). These were resolved [(Jigsaw) validator](/workspace/portfolio_2/assets/images/CSS_Validated.png
