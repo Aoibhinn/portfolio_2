@@ -48,3 +48,9 @@ To make my wireframes I have used balsamiq. I have done one for each page and di
 
 ![home_wireframe](assets/images/home_wireframe.png)
 ![css_q_wireframe](assets/images/css_q_wireframe.png)
+![HTML_q_wireframe](assets/images/html_q_wireframe.png)
+![PHP_q_wireframe](assets/images/php_q_wireframe.png)
+![SQL_q_wireframe](assets/images/sql_q_wireframe.png)
+![save_score_wireframe](assets/images/save_score_wireframe.png)
+![leaderboard_wireframe](assets/images/leaderboard_wireframe.png)
+
