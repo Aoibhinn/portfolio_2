@@ -39,4 +39,11 @@ I want to create a music quiz game to test the players coding terminology knowle
  
 Because of the topic of the quiz, I want the design of the website to have a digital/coding themed background. It needs to be pleasing for the user to look at with the game elements easily distinguishable from the background so that everything is clear and easy to use. To do this I will have a fairly dark background with bright neon colors being used for the game so they will contrast nicely together.
 I want to keep a consistent theme throughout the site by using the same colour combinations on each page. With the site being attractive for the user and easy to use I am hoping the user will want to keep returning to play the game.
+
+ * #### Wireframes
  
+To make my wireframes I have used balsamiq. I have done one for each page and did a design for larger screens and smaller screens to show how the site will be responsive to screen size and change accordingly. The links to each one are below.<br>
+ **__For easier viewing I would recommend clicking the
+ dowload button above the wireframe image as they appear much larger when viewed directly through github__**
+ * [Home wireframe](assets/images/home wireframe.png)
+
