@@ -147,6 +147,9 @@ The design and layout of the game is responsvie to all different screen sizes an
  - The users scores are saved to local storage.
 
 
+  <img src="assets/images/leaderboard.png" width="450" height="300">
+  <img src="assets/images/savescore.png" width="450" height="300">
+
 ### Features Testing
 
 * ### Home Page
