@@ -184,6 +184,49 @@ input::placeholder{
 
 
 
+/* Media Query */
+
+@media screen and (max-width: 575px) {
+    
+    .h1 {
+        display: block;
+        font-size: 2px;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    #game{
+        background-color: black;
+        color: #f00070;
+        width: 25rem;
+        height: 30rem;
+        border-radius: 3px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+        border: 1px solid #f00070;
+    }
+
+    /* bottom display */
+
+    .hud_bottom-display{
+        display: flex;
+    }
+
+    .home-btn{
+        margin-left: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    #timeleft{
+        margin-left: 1rem;
+        
+    }
+  }
+
+
+
 
 
 
