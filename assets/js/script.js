@@ -5,6 +5,8 @@ const SCORE_TEXT = document.querySelector('#score');
 const timeleft = document.getElementById("timeleft");
 
 
+
+
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -64,7 +66,7 @@ startGame = () => {
 timer = () => {
     // set timer decrease 1 every second
     time = time - 1;
-    if (time < 30) {
+    if (time < 10) {
         // display time left
         timeleft.innerHTML = `<i class="far fa-clock"></i> : ${time} seconds`;
     }
@@ -99,7 +101,7 @@ getNewQuestion = () => {
     //Removes used questions
     availableQuestions.splice(questionsIndex, 1);
     // set timer of 30s for each question
-    time = 30;
+    time = 10;
     update = setInterval("timer()", 1000);
     acceptingAnswers = true;
 };

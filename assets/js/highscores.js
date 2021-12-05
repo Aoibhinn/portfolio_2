@@ -2,6 +2,7 @@ const HIGH_SCORES_LIST = document.querySelector('#highScoresList');
 const HIGH_SCORES = JSON.parse(localStorage.getItem('highScores')) || [];
 
 
+
 HIGH_SCORES_LIST.innerHTML = HIGH_SCORES
 
 .map(score => {

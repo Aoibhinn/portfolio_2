@@ -29,7 +29,7 @@ saveHighScore = e => {
         return b.score - a.score;
     });
 
-    HIGH_SCORES.splice(MAX_HIGH_SCORES);
+    HIGH_SCORES.splice(5);
 
     localStorage.setItem('highScore', JSON.stringify(HIGH_SCORES));
     window.location.assign('/');
