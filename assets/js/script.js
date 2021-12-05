@@ -6,6 +6,7 @@ const timeleft = document.getElementById("timeleft");
 
 
 
+
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -13,16 +14,17 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 
-let questions = [{
+let questions = [
+    {
         question: 'What does HTML stand for?',
-        choice1: 'Hyper Text Preprocessor ',
-        choice2: 'Hyper Text Markup Language',
+        choice1: 'Hyper Text Preprocessor ', 
+        choice2: 'Hyper Text Markup Language', 
         choice3: 'Hyper Text Multiple Language',
-        choice4: 'Hyper Tool Multi Language',
+        choice4: 'Hyper Tool Multi Language', 
         answer: 2,
-
+        
     },
-
+    
     {
         question: 'What does CSS stand for?',
         choice1: 'Common Syle Sheet',
@@ -49,25 +51,22 @@ let questions = [{
     },
 ];
 
-//points per score
 const SCORE_POINTS = 10;
-//number of questions per game
 const MAX_QUESTIONS = 4;
 
 //start game function
 startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questions];
+    availableQuestions=[...questions];
     getNewQuestion();
-
 };
 
 //countdown timer for each question
 timer = () => {
     // set timer decrease 1 every second
     time = time - 1;
-    if (time < 10) {
+    if (time < 30) {
         // display time left
         timeleft.innerHTML = `<i class="far fa-clock"></i> : ${time} seconds`;
     }
@@ -82,9 +81,8 @@ timer = () => {
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        //saves score to local storage
         localStorage.setItem('mostRecentScore', score);
-        //takes user to the end page
+
         return window.location.assign('end.html');
     }
 
@@ -94,7 +92,7 @@ getNewQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
-
+    
     CHOICES.forEach(choice => {
         const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
@@ -103,25 +101,26 @@ getNewQuestion = () => {
     //Removes used questions
     availableQuestions.splice(questionsIndex, 1);
     // set timer of 30s for each question
-    time = 10;
+    time = 30;
     update = setInterval("timer()", 1000);
     acceptingAnswers = true;
 };
 
 CHOICES.forEach(choice => {
     choice.addEventListener('click', e => {
-        if (!acceptingAnswers) return;
+        if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
 
+
         if (selectedAnswer == currentQuestion.answer) {
             classToApply = "correct";
             incrementScore(SCORE_POINTS);
-        } else {
+        } else{
             classToApply = "incorrect";
-            alert(`Sorry the correct answer was ${currentQuestion.answer}!`, )
+            alert(`Sorry the correct answer was ${currentQuestion.answer}!`,)
         }
 
 
@@ -136,10 +135,11 @@ CHOICES.forEach(choice => {
     });
 });
 
+//Display added score to player 
 
 incrementScore = num => {
-    score += num;
-    SCORE_TEXT.innerText = score;
+    score +=num;
+    SCORE_TEXT.innerText= score;
 };
 
 startGame();
