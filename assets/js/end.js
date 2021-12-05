@@ -19,7 +19,7 @@ saveHighScore = (e) => {
     e.preventDefault();
 
     const score = {
-        score: mostRecentScore
+        score: mostRecentScore,
         name: username.value
     };
     

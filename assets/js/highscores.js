@@ -1,9 +1,5 @@
-const HIGH_SCORES_LIST = document.querySelector('#highScoresList');
-const HIGH_SCORE = JSON.parse(localStorage.getItem('highScores')) || [];
+const highScoresList = document.getElementById("highScoresList");
+//pulls array of highscores stored in local storage
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-
-
-HIGH_SCORES_LIST.innerHTML = 
-HIGH_SCORE.map(score => {
-    return `<li class="high-score">${score.name} - ${score.score}</li>`;
-}).join('');
+console.log(highScores);
