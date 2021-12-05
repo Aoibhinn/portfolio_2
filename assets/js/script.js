@@ -4,6 +4,7 @@ const PROGRESS_TEXT = document.querySelector('#progressText');
 const SCORE_TEXT = document.querySelector('#score');
 const timeleft = document.getElementById("timeleft");
 const loader = document.getElementById("loader");
+const game = document.getElementById("game");
 
 
 let currentQuestion = {};
@@ -13,17 +14,16 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 
-let questions = [
-    {
+let questions = [{
         question: 'What does HTML stand for?',
-        choice1: 'Hyper Text Preprocessor ', 
-        choice2: 'Hyper Text Markup Language', 
+        choice1: 'Hyper Text Preprocessor ',
+        choice2: 'Hyper Text Markup Language',
         choice3: 'Hyper Text Multiple Language',
-        choice4: 'Hyper Tool Multi Language', 
+        choice4: 'Hyper Tool Multi Language',
         answer: 2,
-        
+
     },
-    
+
     {
         question: 'What does CSS stand for?',
         choice1: 'Common Syle Sheet',
@@ -57,7 +57,7 @@ const MAX_QUESTIONS = 4;
 startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions=[...questions];
+    availableQuestions = [...questions];
     getNewQuestion();
     //adds and hides loader while questions load
     game.classList.remove("hidden");
@@ -95,7 +95,7 @@ getNewQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
-    
+
     CHOICES.forEach(choice => {
         const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
@@ -111,7 +111,7 @@ getNewQuestion = () => {
 
 CHOICES.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return;
+        if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
@@ -121,9 +121,9 @@ CHOICES.forEach(choice => {
         if (selectedAnswer == currentQuestion.answer) {
             classToApply = "correct";
             incrementScore(SCORE_POINTS);
-        } else{
+        } else {
             classToApply = "incorrect";
-            alert(`Sorry the correct answer was ${currentQuestion.answer}!`,)
+            alert(`Sorry the correct answer was ${currentQuestion.answer}!`, )
         }
 
 
@@ -141,8 +141,8 @@ CHOICES.forEach(choice => {
 //Display added score to player 
 
 incrementScore = num => {
-    score +=num;
-    SCORE_TEXT.innerText= score;
+    score += num;
+    SCORE_TEXT.innerText = score;
 };
 
 startGame();

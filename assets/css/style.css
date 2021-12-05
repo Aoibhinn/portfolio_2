@@ -1,14 +1,14 @@
 /* --------- Global style */
-body{
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,.8)),
-    url("../images/code_background.png") center center;
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8)),
+        url("../images/code_background.png") center center;
     -webkit-background-size: cover;
-  /* -moz-background-size: cover;
+    /* -moz-background-size: cover;
   -o-background-size: cover; */
-  background-size: cover;
-  font-family:Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
-  color: #f00070;
-  }
+    background-size: cover;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
+    color: #f00070;
+}
 
 
 
@@ -30,25 +30,26 @@ body{
     flex-direction: column;
 }
 
-.flex-center{
+.flex-center {
     justify-content: center;
     align-items: center;
 }
 
-.btn, #savedScoreBtn{
+.btn,
+#savedScoreBtn {
     font-size: 1.2rem;
     padding: 5px;
     width: 10rem;
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: black ;
+    color: black;
     background-color: #f00070;
     border-radius: 2px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
     transform: scale(1.03);
 }
@@ -57,18 +58,24 @@ body{
 
 /* Loader-Example taken from W3schools*/
 
-#loader{
-    border: 1.6rem solid rgb(245, 39, 217);
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
     border-radius: 50%;
-    border-top: 1.6rem solid rgb(92, 243, 32);
-    width: 10rem;
-    height: 10rem;
-    animation: spin 1.5s linear infinite;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
   }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 
 /* game page styling */
 
-#game{
+#game {
     background-color: black;
     color: #f00070;
     width: 50rem;
@@ -79,18 +86,18 @@ body{
 }
 
 
-#progressText{
+#progressText {
     float: left;
     margin-left: 2rem;
     margin-top: 2rem;
 }
 
-.score-item{
+.score-item {
     float: right;
     margin-right: 2rem;
 }
 
-#question{
+#question {
     text-align: left;
     margin-top: 7rem;
     margin-bottom: 1rem;
@@ -98,13 +105,13 @@ body{
 }
 
 
-.choice-container:hover{
+.choice-container:hover {
     cursor: pointer;
     background-color: white;
     transform: scale(1.02);
 }
 
-.choice-container{
+.choice-container {
     display: block;
     margin-left: 2rem;
     margin-bottom: 0.8rem;
@@ -116,23 +123,21 @@ body{
     border-radius: 2px;
 }
 
-.choice-text{
+.choice-text {
     text-align: left;
     border: 1px solid #f00070;
     padding: 1rem;
-} 
+}
 
-.correct{
+.correct {
     background: linear-gradient(#99e599, #99e599)
-    
 }
 
-.incorrect{
+.incorrect {
     background: linear-gradient(#ff9999, #ff9999)
-  
 }
 
-.fa-home{
+.fa-home {
     font-size: 2rem;
     margin-left: 2rem;
     color: #f00070;
@@ -140,17 +145,17 @@ body{
 
 /* bottom display */
 
-.hud_bottom-display{
+.hud_bottom-display {
     display: flex;
 }
 
-.home-btn{
+.home-btn {
     margin-left: 34rem;
 }
 
-#timeleft{
+#timeleft {
     margin-left: 1rem;
-    
+
 }
 
 
@@ -165,11 +170,11 @@ body{
     max-width: 30rem;
 }
 
-#end-text{
+#end-text {
     text-align: center;
 }
 
-input{
+input {
     margin-bottom: 1rem;
     width: 15rem;
     padding: 0.5rem;
@@ -177,7 +182,7 @@ input{
     border: none;
 }
 
-input::placeholder{
+input::placeholder {
     color: lightgray;
 }
 
@@ -200,7 +205,7 @@ input::placeholder{
 /* Media Query */
 
 @media screen and (max-width: 575px) {
-    
+
     .h1 {
         display: block;
         font-size: 2px;
@@ -211,7 +216,7 @@ input::placeholder{
         font-weight: bold;
     }
 
-    #game{
+    #game {
         background-color: black;
         color: #f00070;
         width: 25rem;
@@ -223,23 +228,17 @@ input::placeholder{
 
     /* bottom display */
 
-    .hud_bottom-display{
+    .hud_bottom-display {
         display: flex;
     }
 
-    .home-btn{
+    .home-btn {
         margin-left: 5rem;
         margin-bottom: 5rem;
     }
 
-    #timeleft{
+    #timeleft {
         margin-left: 1rem;
-        
+
     }
-  }
-
-
-
-
-
-
+}
