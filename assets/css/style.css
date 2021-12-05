@@ -55,6 +55,17 @@ body{
 
 
 
+/* Loader-Example taken from W3schools*/
+
+#loader{
+    border: 1.6rem solid rgb(245, 39, 217);
+    border-radius: 50%;
+    border-top: 1.6rem solid rgb(92, 243, 32);
+    width: 10rem;
+    height: 10rem;
+    animation: spin 1.5s linear infinite;
+  }
+
 /* game page styling */
 
 #game{
