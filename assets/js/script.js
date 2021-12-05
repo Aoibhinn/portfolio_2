@@ -3,8 +3,7 @@ const CHOICES = Array.from(document.querySelectorAll('.choice-text'));
 const PROGRESS_TEXT = document.querySelector('#progressText');
 const SCORE_TEXT = document.querySelector('#score');
 const timeleft = document.getElementById("timeleft");
-const loader = document.getElementById("loader");
-const game = document.getElementById("game");
+
 
 
 let currentQuestion = {};
@@ -61,9 +60,6 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
-    //adds and hides loader while questions load
-    game.classList.remove("hidden");
-    loader.classList.add("hidden");
 
 };
 
