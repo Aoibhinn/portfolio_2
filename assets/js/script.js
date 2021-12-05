@@ -5,8 +5,6 @@ const SCORE_TEXT = document.querySelector('#score');
 const timeleft = document.getElementById("timeleft");
 
 
-
-
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -60,6 +58,7 @@ startGame = () => {
     score = 0;
     availableQuestions=[...questions];
     getNewQuestion();
+
 };
 
 //countdown timer for each question
