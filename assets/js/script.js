@@ -50,7 +50,9 @@ let questions = [{
     },
 ];
 
+//points per score
 const SCORE_POINTS = 10;
+//number of questions per game
 const MAX_QUESTIONS = 4;
 
 //start game function
@@ -84,8 +86,9 @@ timer = () => {
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        //saves score to local storage
         localStorage.setItem('mostRecentScore', score);
-
+        //takes user to the end page
         return window.location.assign('end.html');
     }
 
@@ -117,7 +120,6 @@ CHOICES.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
 
-
         if (selectedAnswer == currentQuestion.answer) {
             classToApply = "correct";
             incrementScore(SCORE_POINTS);
@@ -138,7 +140,6 @@ CHOICES.forEach(choice => {
     });
 });
 
-//Display added score to player 
 
 incrementScore = num => {
     score += num;
