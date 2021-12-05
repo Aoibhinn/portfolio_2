@@ -125,6 +125,22 @@ body{
     color: #f00070;
 }
 
+/* bottom display */
+
+.hud_bottom-display{
+    display: flex;
+}
+
+.home-btn{
+    margin-left: 34rem;
+}
+
+#timeleft{
+    margin-left: 1rem;
+    
+}
+
+
 
 /* End game page */
 
@@ -157,7 +173,7 @@ input::placeholder{
 
 #highScoresList {
     list-style: none;
-    margin-bottom: 4rem;
+    margin-bottom: 35px;
 }
 
 .high-score {
