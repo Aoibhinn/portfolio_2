@@ -13,16 +13,35 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-fetch ("https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple")
- .then(res => {
-     return res.json();
- })
- .then(loadedQuestions => {
-     console.log(loadedQuestions)
-    //  questions = loadedQuestions;
-    //  startGame();
+fetch("https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple")
+    .then(res => {
+        return res.json();
+    })
 
- })
+
+    .then((loadedQuestions) => {
+        questions = loadedQuestions.results.map((loadedQuestion) => {
+            //sets the question format
+            const formattedQuestion = {
+                question: loadedQuestion.question,
+            };
+            //sets the choice format
+            const answerChoices = [...loadedQuestion.incorrect_answers];
+            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+            answerChoices.splice(
+                formattedQuestion.answer - 1,
+                0,
+                loadedQuestion.correct_answer
+            );
+            //sets incorrect answer format
+            answerChoices.forEach((choice, index) => {
+                formattedQuestion['choice' + (index + 1)] = choice;
+            });
+
+            return formattedQuestion;
+        });
+        startGame();
+    })
 
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 4;
@@ -31,7 +50,7 @@ const MAX_QUESTIONS = 4;
 startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions=[...questions];
+    availableQuestions = [...questions];
     getNewQuestion();
 };
 
@@ -65,7 +84,7 @@ getNewQuestion = () => {
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
-    
+
     CHOICES.forEach(choice => {
         const number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
@@ -81,7 +100,7 @@ getNewQuestion = () => {
 
 CHOICES.forEach(choice => {
     choice.addEventListener('click', e => {
-        if(!acceptingAnswers) return;
+        if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
@@ -91,9 +110,9 @@ CHOICES.forEach(choice => {
         if (selectedAnswer == currentQuestion.answer) {
             classToApply = "correct";
             incrementScore(SCORE_POINTS);
-        } else{
+        } else {
             classToApply = "incorrect";
-            alert(`Sorry the correct answer was ${currentQuestion.answer}!`,)
+            alert(`Sorry the correct answer was ${currentQuestion.answer}!`, )
         }
 
 
@@ -111,7 +130,6 @@ CHOICES.forEach(choice => {
 //Display added score to player 
 
 incrementScore = num => {
-    score +=num;
-    SCORE_TEXT.innerText= score;
+    score += num;
+    SCORE_TEXT.innerText = score;
 };
-
