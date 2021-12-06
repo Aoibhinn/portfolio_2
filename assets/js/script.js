@@ -6,7 +6,6 @@ const timeleft = document.getElementById("timeleft");
 
 
 
-
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -44,7 +43,7 @@ fetch("https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=mul
     })
 
 const SCORE_POINTS = 10;
-const MAX_QUESTIONS = 4;
+const MAX_QUESTIONS = 5;
 
 //start game function
 startGame = () => {
@@ -52,6 +51,8 @@ startGame = () => {
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
+    //adds and hides loader while questions load
+    
 };
 
 //countdown timer for each question
