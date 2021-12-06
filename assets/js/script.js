@@ -13,43 +13,13 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
-
-let questions = [
-    {
-        question: 'What does HTML stand for?',
-        choice1: 'Hyper Text Preprocessor ', 
-        choice2: 'Hyper Text Markup Language', 
-        choice3: 'Hyper Text Multiple Language',
-        choice4: 'Hyper Tool Multi Language', 
-        answer: 2,
-        
-    },
-    
-    {
-        question: 'What does CSS stand for?',
-        choice1: 'Common Syle Sheet',
-        choice2: 'Colorful Style Sheet',
-        choice3: 'Compluter Style Sheet',
-        choice4: 'Cascading Style Sheet',
-        answer: 4,
-    },
-    {
-        question: 'What does PHP stand for?',
-        choice1: 'Hometext Preprocessor',
-        choice2: 'Hypertext Preprogramming',
-        choice3: 'Hypertext Programming',
-        choice4: 'Hypertext Preprocessor',
-        answer: 4,
-    },
-    {
-        question: 'What does SQL stand for?',
-        choice1: 'Stylish Question Language',
-        choice2: 'Styesheet Query Language',
-        choice3: 'Statement Question Language',
-        choice4: 'Structured Query Language',
-        answer: 4,
-    },
-];
+fetch ("questions.json")
+ .then(res => {
+     return res.json();
+ })
+ .then(loadedQuestions => {
+     console.log(loadedQuestions)
+ })
 
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 4;
