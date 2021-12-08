@@ -5,19 +5,20 @@ const SCORE_TEXT = document.querySelector('#score');
 const timeleft = document.getElementById("timeleft");
 
 
-
+//Let
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+//pulling questions from OPEN TRIVIA DATABASE api
 fetch("https://opentdb.com/api.php?amount=5&category=18&difficulty=easy&type=multiple")
     .then(res => {
         return res.json();
     })
 
-
+    //Load questions
     .then((loadedQuestions) => {
         questions = loadedQuestions.results.map((loadedQuestion) => {
             //sets the question format
@@ -74,8 +75,9 @@ timer = () => {
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        //saves score to local storage
         localStorage.setItem('mostRecentScore', score);
-
+        //takes user to the end page
         return window.location.assign('end.html');
     }
 
@@ -107,7 +109,7 @@ CHOICES.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
 
-
+        //applies css styling for right or wrong answers and displays correct answer
         if (selectedAnswer == currentQuestion.answer) {
             classToApply = "correct";
             incrementScore(SCORE_POINTS);
