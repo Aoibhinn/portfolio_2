@@ -1,4 +1,4 @@
-# Milestone Project Two | Are you ready to test your coding knowledge
+# Milestone Project Two | Are you ready to test your computing knowledge?
  
 <img src="assets/images/Ready_to_test_your_knowledge.png">
  
