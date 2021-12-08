@@ -8,7 +8,7 @@
  
 This website has been created for my Milestone 2 Interactive Frontend Development project.
  
-I want to create a music quiz game to test the players coding terminology knowledge. The user will be given 4 random questions, worth 10 points a question, with 30 seconds to answer each. With a maximum of 40 points, the user will be able to save their high score and try to get on the top 5 leaderboard.
+I want to create a music quiz game to test the players computing knowledge. The user will be given 5 random questions, worth 10 points a question, with 30 seconds to answer each. With a maximum of 50 points, the user will be able to save their high score and try to get on the top 5 leaderboard.
 
 
 ## User Experience-(UX)
@@ -74,9 +74,9 @@ The design and layout of the game is responsvie to all different screen sizes an
     * **Play** button that links the user to the main game page.
  
  * ### Game Page
-   * A question counter that shows the user which question number they are on out of 4.
+   * A question counter that shows the user which question number they are on out of 5.
    * A score counter that shows the user what they're current score is and that increments by 10 for every correct answer.
-   * A question and 4 possible answers to choose from. The selected answer will turn red if it is wrong with an alert pop up displaying the correct answer. If the answer is correct the answer will turn green.
+   * A question and 5 possible answers to choose from. The selected answer will turn red if it is wrong with an alert pop up displaying the correct answer. If the answer is correct the answer will turn green.
    * A 30 second timer that counts down on screen and resets for each new question.
    * A home button that will take the user back to the main page.
    * 
@@ -111,8 +111,10 @@ The design and layout of the game is responsvie to all different screen sizes an
     Git is used as version control software to add, commit and push code to my GitHub repository where the code is then stored.
   * [GitHub](https://github.com/) <br>
     I have used GitHub as a remote repository to push and store the committed changes to my project from Git. GitHub pages has also been used to deploy my live site.
-   * [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) <br>
+  * [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) <br>
     I have used Google chromes built in developer tools to help with the styling of the site, selecting colors and to help fix any bugs I found.
+  * [Open Triva DB api](https://opentdb.com/api_config.php) <br>
+    I have Open Trivia DB API key to fetch questions and answers for the quiz.
 
 
 ## Testing
@@ -130,7 +132,7 @@ The design and layout of the game is responsvie to all different screen sizes an
 
   **2. I want the site to work as intended incrementing the quesitons and score as the user progresses, with the timer going down for each question.**
  
- - After testing the game many times across multiple devices I am confident that the features are working as intended. The question counter runs from 1 to 4 and ends the game after the 4th question taking the user to the end game page and displaying their score. The score increments as expected, awarding 10 points for each correct answer and the time decreases from 30 seconds for each question. If the time runs out on a question it automatically ends the game and redirects user to save score page.
+ - After testing the game many times across multiple devices I am confident that the features are working as intended. The question counter runs from 1 to 5 and ends the game after the 4th question taking the user to the end game page and displaying their score. The score increments as expected, awarding 10 points for each correct answer and the time decreases from 30 seconds for each question. If the time runs out on a question it automatically ends the game and redirects user to save score page.
 
   * Question counter <br>
  <img src="assets/images/question_counter.png" width="350" height="150">
@@ -169,7 +171,7 @@ The design and layout of the game is responsvie to all different screen sizes an
 
     **3.A question and 4 possible answers to choose from. The selected answer will turn red if it is wrong and green if it is correct.**
  
-    - The answers are displayed in different orders each time. When the correct answer is clicked it turns green. When it's wrong it will display red and the correct answer is displayed as a result.
+    - The answers are displayed in different orders each time. When the correct answer is clicked it turns green. When it's wrong it will display red and the correct answer is displayed as an alert. 
 
     **4.A 30 second timer that counts down on screen and resets for each new question.**
  
@@ -253,5 +255,5 @@ I created the repository using the following steps:
 * [W3schools](https://www.w3schools.com/) was used to help build the spinning loader displayed before the questions are loaded.
 * [Muhanad Hasan](https://www.youtube.com/watch?v=9-5URe9CykA&t=113s) This video helped me to make my own countdown timer for each question.
 * [Stackoverflow](https://stackoverflow.com/) was used to help find solutions to the issues I had whilst building my project.
-- [BrianDesigns] The funcationlaity for the game was inspired by Brian Designs video on creating a short quiz https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2749s
-- [FontAwesome] The icon on the home page were taken from font awesome (https://fontawesome.com/)
+* [BrianDesigns] The funcationlaity for the game was inspired by Brian Designs video on creating a short quiz https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2749s
+* [FontAwesome] The icon on the home page were taken from font awesome (https://fontawesome.com/)
